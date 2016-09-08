@@ -1,15 +1,15 @@
 BoldAsFont=no
-Transparency=low
+Transparency=none
 CursorType=block
 Locale=en_US
 Charset=UTF-8
 Rows=48
-FontHeight=16
+FontHeight=10
 Term=xterm
 ScrollbackLines=100000
-ForegroundColour=131, 148, 150
-BackgroundColour=  0,  43,  54
-CursorColour=    131, 148, 150
+ForegroundColour=253, 246, 227
+BackgroundColour=  0,  0,  0
+CursorColour=    253, 246, 227
 
 Black=             7,  54,  66
 BoldBlack=         0,  43,  54
