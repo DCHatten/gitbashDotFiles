@@ -1,13 +1,16 @@
-#Bash profile to change the default terminal prompt and add some git information.
+﻿#Bash profile to change the default terminal prompt and add some git information.
 #David Barnes -> David Hatten
+
 
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
+
 export TERM=xterm-color
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
+
 
 # Color shortcuts
 export RESET_COLOR='\e[0m' # No Color
@@ -19,6 +22,7 @@ export BBLUE='\e[1;34m'
 export BPURPLE='\e[1;35m'
 export BCYAN='\e[1;36m'
 export BWHITE='\e[0;37m'
+
 
 export BLACK='\e[0;30m'
 export RED='\e[0;31m'
@@ -38,10 +42,12 @@ BASH_THEME_GIT_PROMPT_MODIFIED=" $YELLOW modified"
 BASH_THEME_GIT_PROMPT_ADDED=" $GREEN added"
 BASH_THEME_GIT_PROMPT_UNTRACKED=" $WHITE untracked"
 
+
 BASH_THEME_GIT_PROMPT_PREFIX="$RESET_COLOR $BBLUE"
 BASH_THEME_GIT_PROMPT_SUFFIX="$RESET_COLOR"
 BASH_THEME_GIT_PROMPT_DIRTY="$BRED (*)$RESET_COLOR"
 BASH_THEME_GIT_PROMPT_CLEAN=""
+
 
 # Colors vary depending on time lapsed.
 BASH_THEME_GIT_TIME_SINCE_COMMIT_SHORT="$GREEN"
@@ -49,8 +55,10 @@ BASH_THEME_GIT_TIME_SHORT_COMMIT_MEDIUM="$YELLOW"
 BASH_THEME_GIT_TIME_SINCE_COMMIT_LONG="$BRED"
 BASH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL="$BBLUE"
 
+
 # Format for git_prompt_ahead()
 BASH_THEME_GIT_PROMPT_AHEAD=" ${BWHITE}(${BYELLOW}↑${BWHITE})"
+
 
 # Format for git_prompt_long_sha() and git_prompt_short_sha()
 BASH_THEME_GIT_PROMPT_SHA_BEFORE="$YELLOW::$BLUE"
